@@ -14,9 +14,18 @@ function calculateAdultYears(userAge) {
 }
 
 adultYears = calculateAdultYears(age);
-alert(adultYears);
+console.log(adultYears);
 
 age = 28;
 adultYears = calculateAdultYears(age);
 
-alert(adultYears);
+console.log(adultYears);
+
+let person = {
+  name: "Brae",
+  greet() {
+    console.log("Hello!");
+  },
+};
+
+person.greet();

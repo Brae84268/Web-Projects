@@ -1,31 +1,3 @@
-let age = 25;
-let userName = "Dong Hyun" + "Kim";
-let hobbies = ["Sports", "Cooking", "Reading"];
-let job = {
-  title: "Developer",
-  place: "Seoul",
-  salery: 9500000,
-};
+//document.body.children[1].children[0].href = "https://google.com";
 
-let adultYears;
-
-function calculateAdultYears(userAge) {
-  return userAge - 18;
-}
-
-adultYears = calculateAdultYears(age);
-console.log(adultYears);
-
-age = 28;
-adultYears = calculateAdultYears(age);
-
-console.log(adultYears);
-
-let person = {
-  name: "Brae",
-  greet() {
-    console.log("Hello!");
-  },
-};
-
-person.greet();
+document.getElementById("external-link");

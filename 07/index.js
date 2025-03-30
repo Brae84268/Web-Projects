@@ -1,15 +1,20 @@
-//document.body.children[1].children[0].href = "https://google.com";
+let paragraphElement = document.querySelector("p");
 
-let anchorElement = document.getElementById("external-link");
-anchorElement.href = "https://google.com";
+function changeParagraphText() {
+  paragraphElement.textContent = "Clicked";
+  console.log("Paragraph Clicked!");
+}
 
-anchorElement = document.querySelector("#external-link");
-anchorElement.href = "https://naver.com";
+paragraphElement.addEventListener("click", changeParagraphText);
 
-let newAnchorElement = document.createElement("a");
-newAnchorElement.href = "https://google.com";
-newAnchorElement.textContent = "Go Google";
+let inputElement = document.querySelector("input");
 
-let firstParagraph = document.querySelector("p");
+function retrieveUserInput(event) {
+  //let enteredText = inputElement.value;
+  let enteredText = event.target.value;
+  //let enteredText = event.data;
+  console.log(enteredText);
+  //console.log(event);
+}
 
-firstParagraph.append(newAnchorElement);
+inputElement.addEventListener("input", retrieveUserInput);

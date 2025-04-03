@@ -52,7 +52,7 @@ button {
 
 button:hover {
   background-color: rgb(209, 197, 23);
-  border-color:rgb(209, 197, 23);
+  border-color: rgb(209, 197, 23);
 }
 
 #charcount {
@@ -64,5 +64,13 @@ input.warning {
 }
 
 #remaining-chars.warning {
-  color:rgb(211, 109, 26);
+  color: rgb(228, 76, 76);
+}
+
+input.error {
+  background-color: rgb(255, 106, 106);
+}
+
+#remaining-chars.error {
+  color: rgb(255, 17, 0);
 }
